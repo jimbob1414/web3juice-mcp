@@ -1,0 +1,51 @@
+{
+  "name": "web3juice-mcp",
+  "version": "1.0.0",
+  "mcpName": "com.web3juice/mcp",
+  "description": "Evidence-backed DeFi yield research for AI assistants: what ~17,000 pools pay, where the yield comes from, how it has moved. Read-only MCP server (stdio bridge to web3juice.com).",
+  "type": "module",
+  "bin": {
+    "web3juice-mcp": "bin/web3juice-mcp.mjs"
+  },
+  "main": "lib/bridge.mjs",
+  "exports": {
+    ".": "./lib/bridge.mjs"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "icon.png",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "test": "node --test test/bridge.test.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "defi",
+    "yield",
+    "apy",
+    "stablecoin",
+    "crypto",
+    "claude",
+    "ai-agent",
+    "research"
+  ],
+  "homepage": "https://web3juice.com/mcp",
+  "bugs": {
+    "url": "https://github.com/jimbob1414/web3juice-mcp/issues"
+  },
+  "license": "MIT",
+  "author": "Web3Juice",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimbob1414/web3juice-mcp.git"
+  }
+}

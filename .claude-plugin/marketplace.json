@@ -1,0 +1,15 @@
+{
+  "name": "web3juice",
+  "description": "Web3Juice: evidence-backed DeFi yield data for Claude Code.",
+  "owner": {
+    "name": "Web3Juice",
+    "url": "https://web3juice.com"
+  },
+  "plugins": [
+    {
+      "name": "web3juice",
+      "source": "./plugins/web3juice",
+      "description": "Ask what ~17,000 DeFi pools pay, where the yield comes from and how it has moved. Read-only MCP server."
+    }
+  ]
+}

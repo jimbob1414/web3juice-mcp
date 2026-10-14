@@ -1,0 +1,44 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.web3juice/mcp",
+  "title": "Web3Juice",
+  "description": "Evidence-backed DeFi yield data: what ~17,000 pools pay, where yield comes from, 90-day history. Read-only.",
+  "websiteUrl": "https://web3juice.com/mcp",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://web3juice.com/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional: Bearer w3j_... API key from web3juice.com/?view=account for higher limits and (on Pro) your saved alerts and notebook.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "web3juice-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "WEB3JUICE_API_KEY",
+          "description": "Optional Web3Juice API key (w3j_...).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/jimbob1414/web3juice-mcp",
+    "source": "github"
+  }
+}

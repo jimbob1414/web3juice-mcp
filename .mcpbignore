@@ -1,0 +1,6 @@
+test/
+server.json
+plugins/
+.claude-plugin/
+.github/
+.gitignore

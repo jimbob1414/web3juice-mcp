@@ -1,0 +1,91 @@
+{
+  "manifest_version": "0.3",
+  "name": "web3juice",
+  "display_name": "Web3Juice",
+  "version": "1.0.0",
+  "description": "Evidence-backed DeFi yield data: what ~17,000 pools pay, where the yield comes from and how it has moved.",
+  "long_description": "Ask Claude what a stablecoin pays on each chain, how a pool's APY has moved over 90 days, or how a few pools compare. Every number is dated and linked to its source, base and reward-token yield are kept apart, and unknown values stay unknown. Read-only: Web3Juice never holds funds, never asks for keys and cannot sign transactions. Not financial advice.",
+  "author": {
+    "name": "Web3Juice",
+    "url": "https://web3juice.com"
+  },
+  "homepage": "https://web3juice.com/mcp",
+  "documentation": "https://web3juice.com/mcp",
+  "support": "https://web3juice.com/mcp",
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "bin/web3juice-mcp.mjs",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/bin/web3juice-mcp.mjs"
+      ],
+      "env": {
+        "WEB3JUICE_API_KEY": "${user_config.api_key}"
+      }
+    }
+  },
+  "user_config": {
+    "api_key": {
+      "type": "string",
+      "title": "Web3Juice API key (optional)",
+      "description": "Leave empty for the free research tools. Create a key at web3juice.com/?view=account for higher limits; Pro keys also let Claude read your saved alerts and notebook.",
+      "sensitive": true,
+      "required": false
+    }
+  },
+  "tools": [
+    {
+      "name": "summarize_yields",
+      "description": "Market overview for any filter: median and TVL-weighted APY by chain, protocol or strategy."
+    },
+    {
+      "name": "search_pools",
+      "description": "Find and rank DeFi yield pools by token, chain, protocol, APY and TVL."
+    },
+    {
+      "name": "get_pool",
+      "description": "One pool in detail: APY split, TVL, data age, addresses, deposit and source links."
+    },
+    {
+      "name": "get_pool_history",
+      "description": "7, 30 or 90-day APY trend with dated samples."
+    },
+    {
+      "name": "compare_pools",
+      "description": "Compare 2 to 5 pools side by side with 30-day ranges."
+    },
+    {
+      "name": "get_data_sources",
+      "description": "Which feeds are used and when they last updated."
+    },
+    {
+      "name": "get_methodology",
+      "description": "How the experimental evidence assessment works."
+    }
+  ],
+  "prompts_generated": true,
+  "keywords": [
+    "defi",
+    "yield",
+    "apy",
+    "stablecoin",
+    "crypto",
+    "research"
+  ],
+  "license": "MIT",
+  "privacy_policies": [
+    "https://web3juice.com/privacy"
+  ],
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=18.17.0"
+    }
+  }
+}

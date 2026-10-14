@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "web3juice": {
+      "type": "http",
+      "url": "https://web3juice.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${WEB3JUICE_API_KEY:-}"
+      }
+    }
+  }
+}
