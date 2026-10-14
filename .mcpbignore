@@ -4,3 +4,9 @@ plugins/
 .claude-plugin/
 .github/
 .gitignore
+.gitattributes
+gemini-extension.json
+GEMINI.md
+glama.json
+llms-install.md
+logo-400.png

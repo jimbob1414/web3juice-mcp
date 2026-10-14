@@ -1,0 +1,11 @@
+{
+  "name": "web3juice",
+  "version": "1.0.0",
+  "description": "Evidence-backed DeFi yield data: what ~17,000 pools pay, where the yield comes from and how it has moved. Read-only.",
+  "mcpServers": {
+    "web3juice": {
+      "httpUrl": "https://web3juice.com/api/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
