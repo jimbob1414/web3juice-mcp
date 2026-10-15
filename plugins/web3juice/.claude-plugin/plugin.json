@@ -1,18 +1,21 @@
 {
   "name": "web3juice",
-  "version": "1.0.0",
-  "description": "Evidence-backed DeFi yield data: market summaries, pool detail with base vs reward APY, 90-day history and comparisons for ~17,000 pools. Read-only.",
+  "version": "1.1.0",
+  "description": "Evidence-backed DeFi yield data: market summaries, pool detail with base vs reward APY, 90-day history and comparisons for ~17,000 pools, plus a research skill that keeps answers dated and data-only. Read-only.",
   "author": {
     "name": "Web3Juice",
     "url": "https://web3juice.com"
   },
   "homepage": "https://web3juice.com/mcp",
+  "repository": "https://github.com/jimbob1414/web3juice-mcp",
   "license": "MIT",
   "keywords": [
     "defi",
     "yield",
     "apy",
     "stablecoin",
-    "mcp"
+    "mcp",
+    "skill",
+    "research"
   ]
 }

@@ -9,7 +9,7 @@
     {
       "name": "web3juice",
       "source": "./plugins/web3juice",
-      "description": "Ask what ~17,000 DeFi pools pay, where the yield comes from and how it has moved. Read-only MCP server."
+      "description": "Ask what ~17,000 DeFi pools pay, where the yield comes from and how it has moved. Read-only MCP server plus a research skill (data, not advice)."
     }
   ]
 }
